@@ -21,7 +21,6 @@ body {
   display: block;
   float: left;
   width: 64px;
-  height: 100vh;
   background-image: url('images/tiles.png');
   background-repeat: repeat-y;
   background-position: center;
@@ -31,7 +30,6 @@ body {
   display: block;
   float: left;
   width: 64px;
-  height: 100vh;
   background-image: url('images/tiles.png');
   background-repeat: repeat-y;
   background-position: center;
