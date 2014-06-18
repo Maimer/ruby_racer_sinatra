@@ -9,12 +9,17 @@ get '/' do
 end
 
 post '/scores' do
-  @name = params["name"]
+  if params["name"].length > 16
+    @name = params["name"][1..16]
+  else
+    @name = params["name"]
+  end
   @score = params["score"]
   @floor = params["floor"]
   @bombs = params["bombs"]
   @coins = params["coins"]
-  if @score.to_i < 1000000 && @bombs.to_i <= @coins.to_i / 5 + 1 && @coins.to_i < 100
+  @move = params["move"]
+  if @score.to_i < 1000000 && @bombs.to_i <= @coins.to_i / 5 + 1 && @coins.to_i < 100 && @move == '13'
     save_score(@name, @score, @floor, @bombs, @coins)
   end
 end

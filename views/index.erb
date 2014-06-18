@@ -1,5 +1,5 @@
 <div class="header">
-  <a href="https://github.com/Maimer>"><img class="logo" src="/images/header.png"></a>
+  <a href="https://github.com/Maimer/ruby_racer>"><img class="logo" src="/images/header.png"></a>
 </div>
 <div class="scorestable">
   <table>
@@ -16,10 +16,10 @@
     <% @scores.each do |score| %>
       <tr>
         <td class="row1"><%= score["name"] %></td>
-        <td class="row2"><%= score["score"] %></td>
+        <td class="row2"><%= score["score"].to_s.reverse.gsub(/(\d{3})(?=\d)/, '\\1,').reverse %></td>
         <td class="row3"><%= score["floor"] %></td>
         <td class="row4"><%= score["coins"] %></td>
-        <td class="row5"><%= Time.parse(score["created_at"]).strftime("%m/%d/%y") %></td>
+        <td class="row5"><%= Time.parse(score["created_at"]).strftime("%b %d") %></td>
       </tr>
     <% end %>
     </tbody>

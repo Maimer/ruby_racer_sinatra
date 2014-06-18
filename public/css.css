@@ -1,20 +1,56 @@
+body, html {
+  height: 100%;
+}
+
 body {
-  font-family: Verdana;
-  color: #FFFFFF;
-  background-color: #061722;
-  margin: 0 auto;
-  padding: 0;
   background-image: url('images/bg.png');
-  width: 1088px;
   background-repeat: repeat-y;
   background-position: center;
+  background-color: #061722;
+  margin: 0;
+  padding: 0;
+}
+
+.all {
+  width: 1216px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.tilesleft {
+  display: block;
+  float: left;
+  width: 64px;
+  height: 100vh;
+  background-image: url('images/tiles.png');
+  background-repeat: repeat-y;
+  background-position: center;
+}
+
+.tilesright {
+  display: block;
+  float: left;
+  width: 64px;
+  height: 100vh;
+  background-image: url('images/tiles.png');
+  background-repeat: repeat-y;
+  background-position: center;
+}
+
+.wrapper {
+  float: left;
+  font-family: Verdana;
+  color: #FFFFFF;
+  margin: 0 auto;
+  padding: 0;
+  width: 1088px;
 }
 
 .header {
   display: block;
   text-align: center;
   padding-top: 50px;
-  padding-bottom: 30px;
+  padding-bottom: 35px;
 }
 
 .scorestable {
@@ -25,7 +61,7 @@ body {
 table {
   width: 850px;
   margin: 0 auto;
-  font-size: 24px;
+  font-size: 25px;
   text-align: center;
   border-collapse: collapse;
   padding-left: 20px;
@@ -36,9 +72,13 @@ thead {
 }
 
 .scoresbody, td {
-  border: 1px solid #FFFFFF;
+  /*border: 2px solid #FFFFFF;*/
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.row0 {
+  width: 10%;
 }
 
 .row1 {
