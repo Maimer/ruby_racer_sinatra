@@ -1,0 +1,27 @@
+<div class="header">
+  <a href="https://github.com/Maimer>"><img class="logo" src="/images/header.png"></a>
+</div>
+<div class="scorestable">
+  <table>
+    <thead>
+      <tr>
+        <td><img src="/images/name1.png"></td>
+        <td><img src="/images/score1.png"></td>
+        <td><img src="/images/fl.png"></td>
+        <td><img src="/images/coin1.png"></td>
+        <td><img src="/images/date.png"></td>
+      </tr>
+    </thead>
+    <tbody class="scoresbody">
+    <% @scores.each do |score| %>
+      <tr>
+        <td class="row1"><%= score["name"] %></td>
+        <td class="row2"><%= score["score"] %></td>
+        <td class="row3"><%= score["floor"] %></td>
+        <td class="row4"><%= score["coins"] %></td>
+        <td class="row5"><%= Time.parse(score["created_at"]).strftime("%m/%d/%y") %></td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>
