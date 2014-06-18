@@ -44,3 +44,10 @@ def find_scores
     conn.exec(query)
   end
 end
+
+def delete_score(id)
+  db_connection do |conn|
+    query = "DELETE FROM scores WHERE scores.id = $1"
+    conn.exec_params(query, [id])
+  end
+end
