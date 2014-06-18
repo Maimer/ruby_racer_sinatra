@@ -10,7 +10,7 @@ end
 
 post '/scores' do
   if params["name"].length > 16
-    @name = params["name"][1..16]
+    @name = params["name"][0...16]
   else
     @name = params["name"]
   end
