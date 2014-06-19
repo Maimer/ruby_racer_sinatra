@@ -8,7 +8,7 @@
   <body>
     <div class="all">
       <div class="tilesleft">
-        <% 245.times do %>
+        <% (@scores.size * 23 / 10 + 15).times do %>
           <br>
         <% end %>
       </div>
@@ -16,7 +16,7 @@
           <%= yield %>
         </div>
       <div class="tilesright">
-        <% 245.times do %>
+        <% (@scores.size * 23 / 10 + 15).times do %>
           <br>
         <% end %>
       </div>

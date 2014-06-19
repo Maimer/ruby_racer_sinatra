@@ -10,7 +10,7 @@ end
 
 post '/scores' do
   @scores = find_scores().to_a
-  if @scores.size >= 100
+  if @scores.size >= 250
     if @params["score"].to_i > @scores.last["score"].to_i
       if params["name"].length > 16
         @name = params["name"][0...16]
