@@ -40,7 +40,7 @@ def find_scores
               scores.coins, scores.created_at
             FROM scores
             ORDER BY scores.score DESC
-            LIMIT 100"
+            LIMIT 250"
     conn.exec(query)
   end
 end
