@@ -8,16 +8,16 @@
   <body>
     <div class="all">
       <div class="tilesleft">
-        <% (@scores.size * 23 / 10 + 10).times do %>
-          <br>
+        <% 33.times do %>
+          <img class="tiles" src="images/tiles.png">
         <% end %>
       </div>
         <div class="wrapper">
           <%= yield %>
         </div>
       <div class="tilesright">
-        <% (@scores.size * 23 / 10 + 10).times do %>
-          <br>
+        <% 33.times do %>
+          <img class="tiles" src="images/tiles.png">
         <% end %>
       </div>
     </div>

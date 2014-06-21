@@ -17,22 +17,26 @@ body {
   overflow: auto;
 }
 
+.tiles {
+  margin-bottom: -4px;
+}
+
 .tilesleft {
   display: block;
   float: left;
   width: 64px;
-  background-image: url('images/tiles.png');
+  /*background-image: url('images/tiles.png');
   background-repeat: repeat-y;
-  background-position: center;
+  background-position: center;*/
 }
 
 .tilesright {
   display: block;
   float: left;
   width: 64px;
-  background-image: url('images/tiles.png');
+  /* background-image: url('images/tiles.png');
   background-repeat: repeat-y;
-  background-position: center;
+  background-position: center;*/
 }
 
 .wrapper {
